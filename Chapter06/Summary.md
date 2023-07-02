@@ -3,9 +3,10 @@
 ### 커널 오브젝트
 
 * 커널 오브젝트
-  * 커널에 의해 관리되는 리소스 정보를 담고 있는 데이터 블
+  * 커널에 의해 관리되는 리소스 정보를 담고 있는 데이터 블럭
 
 * 커널 오브젝트와 핸들의 관계
+ 
   ![image](https://github.com/zinoing/Windows_System_Programming/assets/77779979/8d5864bb-4742-4c4c-a83a-d3321ab0ffbc)
 
 * GEtCurrentProcess 함수는 현재 실행되고 있는 Process의 핸들을 얻을 때 사용되는 함수이다. 반환값을 통해 핸들을 얻게 된다.

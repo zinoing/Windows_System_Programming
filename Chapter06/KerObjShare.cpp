@@ -28,7 +28,7 @@ int _tmain(int argc, TCHAR* argv[]) {
 
 		timing += 1;
 		if (timing == 2) {
-			SetPriorityClass(GetCurrentProcess(), NORMAL_PRIORITY_CLASS);
+			SetPriorityClass(pi.hProcess, NORMAL_PRIORITY_CLASS);
 		}
 		return 0;
 	}

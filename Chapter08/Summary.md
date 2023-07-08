@@ -40,3 +40,17 @@ CreateMailslot(...&sa); // &sa는 4번째 전달인자.
 * 모든 대부분의 리소스의 생성 과정에서 "SECURITY_ATTRIBUTES"(보안설정) 구조체를 초기화한다.
 
 ### 핸들의 상속과 UC
+![image](https://github.com/zinoing/Windows_System_Programming/assets/77779979/b918a4c5-b98a-43c3-9029-03100f13322a)
+
+### Psuedo 핸과 핸들의 중복
+![image](https://github.com/zinoing/Windows_System_Programming/assets/77779979/2f4397f3-50ee-47fc-b70a-4a2dd3734815)
+![image](https://github.com/zinoing/Windows_System_Programming/assets/77779979/a1eb3e76-0dd6-4e30-9262-90c81dcfba37)
+![image](https://github.com/zinoing/Windows_System_Programming/assets/77779979/f55afc53-de1c-4f70-97f2-3d66b3b404d4)
+
+## 파이프 방식의 IPC
+
+### IPC별 특징
+![image](https://github.com/zinoing/Windows_System_Programming/assets/77779979/1c0a997a-0c30-45e1-8287-23237f4eda92)
+
+### 이름 있는 파이프 프로그래밍 모델
+![image](https://github.com/zinoing/Windows_System_Programming/assets/77779979/0a3e3979-08ad-44ff-b340-5497eed3694d)

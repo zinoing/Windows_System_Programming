@@ -66,7 +66,7 @@ int CmdProcessing(void) {
 	}
 	else
 	{
-		STARTUPINFO si;
+		STARTUPINFO si = { 0, };
 		PROCESS_INFORMATION pi;
 		si.cb = sizeof(si);
 		BOOL isRun = CreateProcess(

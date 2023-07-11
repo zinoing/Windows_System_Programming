@@ -3,8 +3,6 @@
 #include <stdio.h>
 #include <windows.h>
 #include <tchar.h>
-#include <locale.h>
-#include <tlhelp32.h>
 
 int _tmain(int argc, TCHAR* argv[]) {
 	STARTUPINFO siNORMAL = {0,};

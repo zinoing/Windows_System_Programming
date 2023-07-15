@@ -33,3 +33,49 @@ HANDLE CreateThread(
 * 외부에서 쓰레드를 종료시키고자 하는 경우 => 가능하면 사용 자제
 
 ## 쓰레드의 성격과 특성
+
+### 동시 접근의 문제점
+![image](https://github.com/zinoing/Windows_System_Programming/assets/77779979/32f3f925-24cc-46fc-9a1d-024f992fd66a)
+
+### 프로세스로부터의 쓰레드 분리
+![image](https://github.com/zinoing/Windows_System_Programming/assets/77779979/f5a5b78b-bd5f-452d-aabf-51f5dd886496)
+
+### ANSI 표준 C라이브러리와 쓰레드
+![image](https://github.com/zinoing/Windows_System_Programming/assets/77779979/0d727685-8652-4600-95af-6db9b80270c7)
+
+### 쓰레드의 상태 컨트롤
+![image](https://github.com/zinoing/Windows_System_Programming/assets/77779979/ff18a1c7-bc14-49e6-81a9-0cc31ef7b458)
+
+```c
+DWORD SuspenThread (
+  HANDLE hThread;
+);
+```
+* If the function succeds, the return value is the thread's previous suspend count otherwise, it is (DWORD) -1
+
+```c
+DWORD ResumeThread (
+  HANDLE hThread;
+);
+```
+* If the function succeds, the return value is the thread's previous suspend count otherwise, it is (DWORD) -1
+
+### 쓰레드의 우선순위 결정 요소
+![image](https://github.com/zinoing/Windows_System_Programming/assets/77779979/1ec43fa6-5e37-43fd-bd29-839346badc09)
+
+### 쓰레드의 우선순위 컨트롤 함수
+```c
+DWORD SetThreadPriority (
+  HANDLE hThread;
+int nPriority;
+);
+```
+* If the function fails, the return value is zero.
+
+
+```c
+DWORD GetThreadPriority (
+  HANDLE hThread;
+);
+```
+* If the function fails, the return value THREAD_PRIORITY_RETURN

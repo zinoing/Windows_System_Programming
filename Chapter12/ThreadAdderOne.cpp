@@ -5,8 +5,6 @@
 #include <Windows.h>
 #include <tchar.h>
 
-#define MAX_THREADS (1024*10)
-
 DWORD WINAPI ThreadProc(LPVOID lpParam) // LPVOID란 void*를 뜻한다, 함수 호출시 인자를 스택에, 오른쪽에서 왼쪽순으로 저장한다. 
 {
 	DWORD* nPtr = (DWORD*)lpParam;
@@ -25,7 +23,7 @@ DWORD cntOfThread = 0;
 
 int _tmain(int argc, TCHAR* argv[]) {
 
-	DWORD dwThreadID[MAX_THREADS];
+	DWORD dwThreadID[3];
 	HANDLE hThread[3];
 
 	DWORD paramThread[] = { 1, 3, 4, 7, 8, 10 };

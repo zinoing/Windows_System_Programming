@@ -54,7 +54,7 @@ int _tmain(int argc, TCHAR* argv[]) {
 		hThread,
 		TRUE,
 		INFINITE
-		);
+	);
 	CloseHandle(hEvent);
 	CloseHandle(hThread[0]);
 	CloseHandle(hThread[1]);
@@ -76,6 +76,6 @@ unsigned int WINAPI CountputThreadFunction(LPVOID lpParam)
 {
 	WaitForSingleObject(hEvent, INFINITE);
 
-	_tprintf(_T("output string length: $d \n"), _tcslen(string)-1);
+	_tprintf(_T("output string length: %d \n"), _tcslen(string) - 1);
 	return 0;
 }

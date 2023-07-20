@@ -14,7 +14,7 @@ struct __ThreadPool
   WORK workList[WORK_MAX];
 
   // Thread 정보와 각 Thread별 Event 오브젝트
-  WorkThread workerThreadList[THREAD_MAX];
+  WorkerThread workerThreadList[THREAD_MAX];
   HANDLE workerEventList[THREAD_MAX];
 
   // Work에 대한 정보

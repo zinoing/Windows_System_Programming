@@ -22,3 +22,8 @@
   * 블록단위 전송 -> Spatial Locality
  
 ## 가상 메모리(Virtual Memory)
+
+### 가상 주소(Virtual Address)
+* 가상 주소가 해결하고 있는 두 가지
+  * 선 할당으로 인한 부담
+  * 느린 속도의 개선

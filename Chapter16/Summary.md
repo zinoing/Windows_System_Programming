@@ -1,0 +1,24 @@
+# 컴퓨터 구조에 대한 네 번째 이야기
+
+## 메모리 계층
+
+### 메모리 계층 구조
+![image](https://github.com/zinoing/Windows_System_Programming/assets/77779979/ea828ab9-fa5f-4659-a87b-0b407d2af27d)
+
+## 캐쉬와 캐쉬 알고리즘
+
+### 프로그램의 일반적 특성
+
+* 성능 향상과 캐쉬메모리
+  * Locality
+* Locality
+  * Temporal Locality: 반복접근
+  * Spatial Localty: 주변접근
+
+### 캐쉬 알고리즘
+
+* 캐쉬 기본 정책
+  * 캐쉬 특성 -> Temporal Locality
+  * 블록단위 전송 -> Spatial Locality
+ 
+## 가상 메모리(Virtual Memory)

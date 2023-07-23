@@ -27,3 +27,9 @@
 * 가상 주소가 해결하고 있는 두 가지
   * 선 할당으로 인한 부담
   * 느린 속도의 개선
+
+### 선 할당으로 인한 부담 해결
+![image](https://github.com/zinoing/Windows_System_Programming/assets/77779979/118df6c3-993b-4a34-bad7-901e58f7a9ca)
+
+### 느린 속도의 개선
+![image](https://github.com/zinoing/Windows_System_Programming/assets/77779979/b51a4626-d5fc-48c5-ad32-d6b6638b91be)

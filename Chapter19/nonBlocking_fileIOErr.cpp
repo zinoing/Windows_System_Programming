@@ -28,17 +28,17 @@ int _tmain(int argc, TCHAR* argv[])
 
 	OVERLAPPED overlappedInstOne;
 	memset(&overlappedInstOne, 0, sizeof(overlappedInstOne));
-	overlappedInstOne.hEvent = (HANDLE)1234;	// 추가로 데이터 전송 가능한 경로.
+	overlappedInstOne.hEvent = (HANDLE)1234;
 	WriteFileEx(hFile, strData1, sizeof(strData1), &overlappedInstOne, FileIOCompletionRoutine);
 
 	OVERLAPPED overlappedInstTwo;
 	memset(&overlappedInstTwo, 0, sizeof(overlappedInstTwo));
-	overlappedInstTwo.hEvent = (HANDLE)1234;	// 추가로 데이터 전송 가능한 경로.
+	overlappedInstTwo.hEvent = (HANDLE)1234;	
 	WriteFileEx(hFile, strData2, sizeof(strData2), &overlappedInstTwo, FileIOCompletionRoutine);
 
 	OVERLAPPED overlappedInstThree;
 	memset(&overlappedInstThree, 0, sizeof(overlappedInstThree));
-	overlappedInstThree.hEvent = (HANDLE)1234;	// 추가로 데이터 전송 가능한 경로.
+	overlappedInstThree.hEvent = (HANDLE)1234;	
 	WriteFileEx(hFile, strData3, sizeof(strData3), &overlappedInstThree, FileIOCompletionRoutine);
 
 	SleepEx(INFINITE, TRUE);

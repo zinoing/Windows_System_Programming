@@ -57,6 +57,7 @@ int _tmain(int argc, TCHAR* argv[])
 		_tprintf(_T("Release succeeded"));
 	else
 		_tprintf(_T("Release failed"));
+	return 1;
 }
 
 int PageFaultExceptionFilter(DWORD exptCode)
